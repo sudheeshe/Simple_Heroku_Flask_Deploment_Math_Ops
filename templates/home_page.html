@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Output Tag</title>
+   </head>
+   <body>
+      <p>Calculate the math operations of the two Numbers</p>
+      <form action="/submit" method="post">
+         <label>Enter First Value.</label><br>
+         <input type="number" name="num1" value=""/><br>
+         <br/>
+         <label>Enter First Value.</label><br>
+         <input type="number" name="num2" value=""><br>
+         <br/>
+         <tr>
+            <td>Operation :</td>
+            <td>
+               <select name = 'maths_operation' id="maths_operation">
+                  <option value="Addition">Addition</option>
+                  <option value='Subtraction'>Subtraction</option>
+                  <option value='Multiplication'>Multiplication</option>
+                  <option value='Division'>Division</option>
+                  <option value='Floor_Division'>Floor_Division</option>
+               </select>
+            </td>
+         </tr>
+         <br>
+         <br/>
+         <tr>
+            <td><input type="submit" value="Submit"></td>
+         </tr>
+
+      </form>
+   </body>
+</html>
