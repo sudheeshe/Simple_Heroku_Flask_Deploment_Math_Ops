@@ -3,11 +3,11 @@ from Operations import mathOps
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/",  methods=['GET','POST'])
 def home():
     return render_template('home_page.html')
 
-@app.route('/submit',methods=['POST'])
+@app.route('/submit',methods=['GET','POST'])
 def result():
     num1 = request.form.get('num1')
     num2 = request.form.get('num2')
